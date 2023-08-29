@@ -38,6 +38,11 @@
 	background-image: none;
 }
 
+.chosen-container-single .chosen-single {
+	border: none;
+	background-image: none;
+}
+
 /* Page Style */
 
 html {

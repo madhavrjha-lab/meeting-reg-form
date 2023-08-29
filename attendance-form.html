@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Meeting Attendance Form</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+		<link rel="stylesheet" href="https://harvesthq.github.io/chosen/chosen.css" />
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<main id="meetingReg">
+			<form action="">
+				<fieldset>
+					<legend>Meeting Attendance</legend>
+					<div class="fields-wrapper">
+						<div class="form-field">
+							<label for="circuitInput">Select Circuit</label>
+							<div class="input-box">
+								<select name="circuit" id="circuitInput">
+									<option value="Vhembe East">Vhembe East</option>
+									<option value="Vhembe West">Vhembe West</option>
+									<option value="Vhembe North">Vhembe North</option>
+									<option value="Vhembe South">Vhembe South</option>
+									<option value="Capricorn South">Capricorn South</option>
+									<option value="Capricorn North">Capricorn North</option>
+									<option value="Johannesburg">Johannesburg</option>
+								</select>
+								<i class="fa-solid fa-circle-exclamation"></i>
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<div class="invalid-message"></div>
+						</div>
+						<div class="form-field">
+							<label for="sectorInput">Select Sector</label>
+							<div class="input-box">
+								<select name="sector" id="sectorInput">
+									<option value="Public">Public</option>
+									<option value="Independent">Independent</option>
+								</select>
+								<i class="fa-solid fa-circle-exclamation"></i>
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<div class="invalid-message"></div>
+						</div>
+						<div class="form-field wide">
+							<label for="schoolNameInput">School Name</label>
+							<div class="input-box">
+								<input type="text" name="schoolName" id="schoolNameInput" placeholder="Enter School Name" />
+								<i class="fa-solid fa-circle-exclamation"></i>
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<div class="invalid-message"></div>
+						</div>
+						<div class="form-field">
+							<label for="principalNameInput">Principal Name</label>
+							<div class="input-box">
+								<input type="text" name="principalName" id="principalNameInput" placeholder="Enter Principal Name" />
+								<i class="fa-solid fa-circle-exclamation"></i>
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<div class="invalid-message"></div>
+						</div>
+						<div class="form-field">
+							<label for="principalDesignationInput">Principal Designation</label>
+							<div class="input-box">
+								<input
+									type="text"
+									name="principalDesignation"
+									id="principalDesignationInput"
+									placeholder="Enter Principal Designation" />
+								<i class="fa-solid fa-circle-exclamation"></i>
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<div class="invalid-message"></div>
+						</div>
+						<div class="form-field wide">
+							<label for="meetingReviewInput">Meeting Review (optional)</label>
+							<div class="input-box">
+								<textarea name="meetingReview" id="meetingReviewInput" placeholder="Enter Meeting Review"></textarea>
+								<i class="fa-solid fa-circle-exclamation"></i>
+								<i class="fa-solid fa-check"></i>
+								<span class="counter"></span>
+							</div>
+							<div class="invalid-message"></div>
+						</div>
+						<div class="form-field submit wide">
+							<button class="btn btn-outline-warning cancel-btn" type="button">Cancel</button>
+							<button class="btn btn-success" type="submit">Submit</button>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</main>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+		<script src="https://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>
