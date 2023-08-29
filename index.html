@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Meeting Registration Form</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+		<link rel="stylesheet" href="https://harvesthq.github.io/chosen/chosen.css" />
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<main id="meetingReg">
+			<form action="">
+				<fieldset>
+					<legend>Meeting Info</legend>
+					<div class="fields-wrapper">
+						<div class="form-field">
+							<label for="meetingTitleInput">Meeting Title</label>
+							<div class="input-box">
+								<input type="text" name="meetingTitle" id="meetingTitleInput" placeholder="Meeting Title" />
+								<i class="fa-solid fa-circle-exclamation"></i>
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<div class="invalid-message"></div>
+						</div>
+						<div class="form-field">
+							<label for="meetingDateInput">Meeting Date</label>
+							<div class="input-box">
+								<input type="date" name="meetingDate" id="meetingDateInput" placeholder="" />
+								<i class="fa-solid fa-circle-exclamation"></i>
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<div class="invalid-message"></div>
+						</div>
+						<div class="form-field">
+							<label for="meetingStartTimeInput">Meeting Start Time (optional)</label>
+							<div class="input-box">
+								<input type="time" name="meetingStartTime" id="meetingStartTimeInput" placeholder="" />
+								<i class="fa-solid fa-circle-exclamation"></i>
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<div class="invalid-message"></div>
+						</div>
+						<div class="form-field">
+							<label for="attachedFileInput">Attach File (optional)</label>
+							<div class="input-box">
+								<input type="file" name="attachedFile" id="attachedFileInput" placeholder="" />
+								<i class="fa-solid fa-circle-exclamation"></i>
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<div class="invalid-message"></div>
+						</div>
+						<div class="form-field wide">
+							<label for="meetingDescInput">Meeting Description (optional)</label>
+							<div class="input-box">
+								<textarea name="meetingDesc" id="meetingDescInput" placeholder="Enter Meeting Description"></textarea>
+								<i class="fa-solid fa-circle-exclamation"></i>
+								<i class="fa-solid fa-check"></i>
+								<span class="counter"></span>
+							</div>
+							<div class="invalid-message"></div>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Meeting Attendees</legend>
+					<div class="fields-wrapper">
+						<div class="form-field">
+							<label for="circuitInput">Select Circuit</label>
+							<div class="input-box">
+								<select
+									name="circuit"
+									id="circuitInput"
+									multiple
+									data-placeholder="Select Circuit"
+									class="chosen-select">
+									<option value="Vhembe East">Vhembe East</option>
+									<option value="Vhembe West">Vhembe West</option>
+									<option value="Vhembe North">Vhembe North</option>
+									<option value="Vhembe South">Vhembe South</option>
+									<option value="Capricorn South">Capricorn South</option>
+									<option value="Capricorn North">Capricorn North</option>
+									<option value="Johannesburg">Johannesburg</option>
+								</select>
+								<i class="fa-solid fa-circle-exclamation"></i>
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<div class="invalid-message"></div>
+						</div>
+						<div class="form-field">
+							<label for="phaseInput">Select Phase</label>
+							<div class="input-box">
+								<select name="phase" id="phaseInput" multiple data-placeholder="Select Phase" class="chosen-select">
+									<option value="Primary">Primary</option>
+									<option value="Secondary">Secondary</option>
+									<option value="Combined">Combined</option>
+								</select>
+								<i class="fa-solid fa-circle-exclamation"></i>
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<div class="invalid-message"></div>
+						</div>
+						<div class="form-field">
+							<label for="schoolInput">Select School</label>
+							<div class="input-box">
+								<select name="school" id="schoolInput" multiple data-placeholder="Select School" class="chosen-select">
+									<option value="Alphendale High School">Alphendale High School</option>
+									<option value="Mveledzandivho Primary">Mveledzandivho Primary</option>
+									<option value="Hitekani Secondary">Hitekani Secondary</option>
+									<option value="Ketlani Primary">Ketlani Primary</option>
+									<option value="Kutama Secondary">Kutama Secondary</option>
+									<option value="Florapark Primary">Florapark Primary</option>
+									<option value="Banana Primary">Banana Primary</option>
+								</select>
+								<i class="fa-solid fa-circle-exclamation"></i>
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<div class="invalid-message"></div>
+						</div>
+						<div class="form-field">
+							<label for="attendeesInput">Select Attendees</label>
+							<div class="input-box">
+								<select
+									name="attendees"
+									id="attendeesInput"
+									multiple
+									data-placeholder="Select Attendees"
+									class="chosen-select">
+									<option value="Recipients">Recipients</option>
+									<option value="Principals">Principals</option>
+									<option value="Educators">Educators</option>
+								</select>
+								<i class="fa-solid fa-circle-exclamation"></i>
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<div class="invalid-message"></div>
+						</div>
+						<div class="form-field submit wide">
+							<button class="btn btn-outline-warning cancel-btn" type="button">Cancel</button>
+							<button class="btn btn-success" type="submit">Submit</button>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</main>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+		<script src="https://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>

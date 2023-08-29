@@ -1,0 +1,259 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+		'Helvetica Neue', sans-serif;
+}
+
+/* Override Bootstrap */
+
+.btn:focus,
+.btn-close:focus,
+.form-check-input:focus,
+.accordion-button:focus {
+	box-shadow: none !important;
+}
+
+.accordion-item {
+	border: none;
+}
+
+.accordion-button {
+	color: #313131 !important;
+	background-color: #b8e0f9 !important;
+	box-shadow: none !important;
+	padding: 10px;
+	font-weight: 600;
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+/* Override Chosen */
+
+.chosen-container-multi .chosen-choices {
+	border: none;
+	background-image: none;
+}
+
+/* Page Style */
+
+html {
+	font-size: 14px;
+}
+
+body {
+	display: flex;
+	align-items: start;
+	justify-content: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	appearance: none;
+}
+
+/* Meeting Registration Form */
+
+#meetingReg {
+	width: 700px;
+	margin-top: 1rem;
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#meetingReg fieldset {
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+#meetingReg fieldset legend {
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: #2b2d2d;
+}
+
+#meetingReg fieldset .fields-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+}
+
+/* Form Field */
+
+.form-field {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-field.wide {
+	grid-column: 1 / -1;
+}
+
+.form-field.submit {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	justify-content: end;
+}
+
+.form-field label {
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: #707171;
+}
+
+.form-field .input-box {
+	width: 100%;
+	border: 1px solid #ced4d4;
+	position: relative;
+	border-radius: 3px;
+	display: flex;
+}
+
+.form-field .input-box span.counter {
+	position: absolute;
+	inset: -20px 0 auto auto;
+	font-size: 0.9rem;
+	color: #888;
+}
+
+.form-field.valid .input-box {
+	border: 1px solid #198754;
+}
+
+.form-field.invalid .input-box {
+	border: 1px solid #dc3545;
+}
+
+.form-field input[type='text'] {
+	/* Text */
+	outline: none;
+	border: none;
+	width: 100%;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+}
+
+.form-field input[type='number'] {
+	/* Number */
+	outline: none;
+	border: none;
+	width: 100%;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+}
+
+.form-field input[type='email'] {
+	/* Email */
+	outline: none;
+	border: none;
+	width: 100%;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+}
+
+.form-field input[type='date'] {
+	/* Date */
+	outline: none;
+	border: none;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+}
+
+.form-field input[type='time'] {
+	/* Time */
+	outline: none;
+	border: none;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+}
+
+.form-field input[type='url'] {
+	/* URL */
+	outline: none;
+	border: none;
+	width: 100%;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+}
+
+.form-field input[type='file'] {
+	/* File */
+	outline: none;
+	border: none;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+}
+
+.form-field textarea {
+	/* Textarea */
+	outline: none;
+	border: none;
+	width: 100%;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+	resize: vertical;
+	min-height: 50px;
+}
+
+.form-field select {
+	/* Select */
+	outline: none;
+	border: none;
+	width: 100%;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+	appearance: none;
+}
+
+.form-field i {
+	position: absolute;
+	font-size: 1.1rem;
+	inset: 0 5px auto auto;
+	top: 50%;
+	transform: translateY(-50%);
+	display: none;
+	color: #ced4d4;
+}
+
+.form-field i.fa-circle-exclamation {
+	color: #dc3545;
+}
+
+.form-field.invalid i.fa-circle-exclamation {
+	display: block;
+}
+
+.form-field i.fa-check {
+	color: #198754;
+}
+
+.form-field.valid i.fa-check {
+	display: block;
+}
+
+.form-field .invalid-message {
+	font-size: 0.9rem;
+	color: #dc3545;
+	display: none;
+}
+
+.form-field.invalid .invalid-message {
+	display: block;
+}

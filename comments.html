@@ -1,0 +1,72 @@
+<!-- Paragraph -->
+<div class="form-field wide">
+	<label for="meetingDescInput">Meeting Description (optional)</label>
+	<div class="input-box">
+		<textarea name="meetingDesc" id="meetingDescInput" placeholder="Enter Meeting Description"></textarea>
+		<i class="fa-solid fa-circle-exclamation"></i>
+		<i class="fa-solid fa-check"></i>
+		<span></span>
+	</div>
+	<div class="invalid-message"></div>
+</div>
+
+<!-- Date -->
+<div class="form-field">
+	<label for="filedInput">Field</label>
+	<div class="input-box">
+		<input type="date" id="filedInput" name="nextAppointment" />
+		<i class="fa-solid fa-circle-exclamation"></i>
+		<i class="fa-solid fa-check"></i>
+	</div>
+	<div class="invalid-message">This is mandatory to select</div>
+</div>
+
+<!-- Option -->
+<div class="form-field">
+	<label for="schoolStatusInput">School Status (optional)</label>
+	<div class="input-box">
+		<select name="schoolStatus" id="schoolStatusInput">
+			<option value="">Select</option>
+			<option value="Active">Active</option>
+			<option value="Ready">Ready</option>
+			<option value="Upcoming">Upcoming</option>
+			<option value="Inactive">Inactive</option>
+			<option value="Disable">Disable</option>
+		</select>
+		<i class="fa-solid fa-circle-exclamation"></i>
+		<i class="fa-solid fa-check"></i>
+	</div>
+	<div class="invalid-message"></div>
+</div>
+
+<!-- Multiple Select -->
+<div class="form-field">
+	<label for="schoolInput">Select School</label>
+	<div class="input-box">
+		<select name="school" id="schoolInput" multiple data-placeholder="Select School" class="chosen-select">
+			<option value="Alphendale High School">Alphendale High School</option>
+			<option value="Mveledzandivho Primary">Mveledzandivho Primary</option>
+			<option value="Hitekani Secondary">Hitekani Secondary</option>
+			<option value="Ketlani Primary">Ketlani Primary</option>
+			<option value="Kutama Secondary">Kutama Secondary</option>
+			<option value="Florapark Primary">Florapark Primary</option>
+			<option value="Banana Primary">Banana Primary</option>
+		</select>
+		<i class="fa-solid fa-circle-exclamation"></i>
+		<i class="fa-solid fa-check"></i>
+	</div>
+	<div class="invalid-message"></div>
+</div>
+
+<!-- Input -->
+<div class="form-field">
+	<label for="attachedFileInput">Attached File (optional)</label>
+	<div class="input-box">
+		<input type="file" name="attachedFile" id="attachedFileInput" placeholder="" />
+		<i class="fa-solid fa-circle-exclamation"></i>
+		<i class="fa-solid fa-check"></i>
+	</div>
+	<div class="invalid-message"></div>
+</div>
+
+<!-- Multiple Select -->
