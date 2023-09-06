@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			body {
+				background-color: #f9f9f9;
+				min-height: 100vh;
+				display: grid;
+				place-content: center;
+				/* print */
+				background-color: transparent;
+				place-content: unset;
+			}
+
+			#page {
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+				width: 700px;
+				box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+				min-height: 800px;
+				border: 1px solid #ccc;
+				/* Print */
+				width: 100%;
+				box-shadow: none;
+				min-height: 0;
+				border: none;
+			}
+
+			/* #logo */
+
+			#logo {
+				padding: 1rem;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			#logo img {
+				height: 130px;
+				mix-blend-mode: multiply;
+			}
+
+			#logo p {
+				font-size: 0.9rem;
+				line-height: 1.4;
+				text-align: right;
+				color: #333;
+			}
+
+			/* #divider */
+
+			#divider {
+				width: 100%;
+				padding: 10px 1rem;
+			}
+
+			#divider h2 {
+				text-transform: uppercase;
+				text-align: center;
+				font-size: 1.5rem;
+				line-height: 1.5;
+				margin: 0;
+				color: #555;
+				border-top: 2px solid #999;
+				border-bottom: 2px solid #999;
+			}
+
+			/* #info */
+
+			#info {
+				padding: 1rem;
+				padding-bottom: 0;
+			}
+
+			#info > p {
+				text-transform: uppercase;
+				text-align: center;
+				font-size: 0.9rem;
+				margin-bottom: 1rem;
+			}
+
+			#info div {
+				padding-top: 1rem;
+				display: grid;
+				grid-template-columns: 65% 35%;
+				padding-bottom: 10px;
+			}
+
+			#info div p {
+				text-transform: uppercase;
+				font-size: 0.9rem;
+			}
+
+			/* #main */
+
+			#main {
+				padding: 1rem;
+				padding-top: 0;
+			}
+
+			#main table {
+				width: 100%;
+				border-collapse: collapse;
+			}
+
+			#main table th,
+			#main table td {
+				padding: 4px;
+				border: 1px solid #aaa;
+				font-size: 0.9rem;
+			}
+
+			#main table th {
+				text-transform: uppercase;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="page">
+			<header>
+				<!-- logo -->
+				<div id="logo">
+					<img src="https://vhembewest.co.za/public/frontend/images/Limpopo.png" alt="" />
+					<p class="contact-info">
+						Garona Building, Mmbordnhba, <br />
+						First Floor East Wing, <br />
+						Provate Bag, X2044, <br />
+						Mambatha 2736 <br />
+						Tel.: (018)386-342931 <br />
+						E-mail: agendu@nwpg.gov.za
+					</p>
+				</div>
+				<!-- divider -->
+				<div id="divider">
+					<h2>Office of the Superintendent-General</h2>
+				</div>
+				<!-- info -->
+				<div id="info">
+					<p>Attendance register</p>
+					<p>Meeting Between the department of education and prime molecular technologies africa</p>
+					<p>venue: Rosewoond country lodge, rustenburg</p>
+					<div>
+						<p>Date: 08 September 2023</p>
+						<p>Time: 11h30</p>
+					</div>
+				</div>
+			</header>
+			<main id="main">
+				<!-- table -->
+				<table>
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Name</th>
+							<th>Designation</th>
+							<th>E-Mail Address</th>
+							<th>Tel Number/ <br />Cell Number</th>
+							<th>Signature</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>John Doe</td>
+							<td>HOD</td>
+							<td>johndoe@gmail.com</td>
+							<td>064632526</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>John Doe</td>
+							<td>HOD</td>
+							<td>johndoe@gmail.com</td>
+							<td>064632526</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>John Doe</td>
+							<td>HOD</td>
+							<td>johndoe@gmail.com</td>
+							<td>064632526</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>John Doe</td>
+							<td>HOD</td>
+							<td>johndoe@gmail.com</td>
+							<td>064632526</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</main>
+		</div>
+	</body>
+</html>

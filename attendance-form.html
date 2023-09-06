@@ -16,10 +16,26 @@
 				<fieldset>
 					<legend>Meeting Attendance</legend>
 					<div class="fields-wrapper">
+						<div class="form-field wide">
+							<label for="attendanceTypeInput">Take Attendance Type</label>
+							<div class="input-box">
+								<select name="attendanceType" id="attendanceTypeInput">
+									<option value="">Select</option>
+									<option value="QR">QR (Scan the QR and approve the attendance)</option>
+									<option value="Form">Form (Fill the form and approve the attendnace)</option>
+								</select>
+								<i class="fa-solid fa-circle-exclamation"></i>
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<div class="invalid-message"></div>
+						</div>
+					</div>
+					<div class="fields-wrapper hidden" id="Form" style="margin-top: 1rem">
 						<div class="form-field">
 							<label for="circuitInput">Select Circuit</label>
 							<div class="input-box">
 								<select name="circuit" id="circuitInput">
+									<option value="">Select</option>
 									<option value="Vhembe East">Vhembe East</option>
 									<option value="Vhembe West">Vhembe West</option>
 									<option value="Vhembe North">Vhembe North</option>
@@ -37,6 +53,7 @@
 							<label for="sectorInput">Select Sector</label>
 							<div class="input-box">
 								<select name="sector" id="sectorInput">
+									<option value="">Select</option>
 									<option value="Public">Public</option>
 									<option value="Independent">Independent</option>
 								</select>
@@ -46,9 +63,18 @@
 							<div class="invalid-message"></div>
 						</div>
 						<div class="form-field wide">
-							<label for="schoolNameInput">School Name</label>
+							<label for="schoolInput">Select School</label>
 							<div class="input-box">
-								<input type="text" name="schoolName" id="schoolNameInput" placeholder="Enter School Name" />
+								<select name="school" id="schoolInput">
+									<option value="">Select</option>
+									<option value="Alphendale High School">Alphendale High School</option>
+									<option value="Mveledzandivho Primary">Mveledzandivho Primary</option>
+									<option value="Hitekani Secondary">Hitekani Secondary</option>
+									<option value="Ketlani Primary">Ketlani Primary</option>
+									<option value="Kutama Secondary">Kutama Secondary</option>
+									<option value="Florapark Primary">Florapark Primary</option>
+									<option value="Banana Primary">Banana Primary</option>
+								</select>
 								<i class="fa-solid fa-circle-exclamation"></i>
 								<i class="fa-solid fa-check"></i>
 							</div>
@@ -90,6 +116,13 @@
 							<button class="btn btn-outline-warning cancel-btn" type="button">Cancel</button>
 							<button class="btn btn-success" type="submit">Submit</button>
 						</div>
+					</div>
+					<div id="QR" style="text-align: center">
+						<img
+							src="https://img.freepik.com/premium-vector/qr-code-sample-smartphone-scanning-qr-code-icon-flat-design-stock-vector-illustration_550395-108.jpg?w=2000"
+							alt="QR Code"
+							width="300px" />
+						<p>Scan the Code and Make Attendnace</p>
 					</div>
 				</fieldset>
 			</form>
