@@ -16,3 +16,15 @@ document.querySelector('#attendanceTypeInput').addEventListener('change', e => {
 			break
 	}
 })
+
+document.querySelector('#schoolInput').addEventListener('change', e => {
+	const principalName = document.querySelector('#principalNameInput')
+	const principalDesignation = document.querySelector('#principalDesignationInput')
+
+	if (!e.target.value) {
+		principalName.value = principalDesignation.value = ''
+	} else {
+		principalName.value = 'Principal Name of ' + e.target.value
+		principalDesignation.value = 'Designation of ' + e.target.value
+	}
+})
