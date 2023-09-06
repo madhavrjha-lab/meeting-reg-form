@@ -1,0 +1,277 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Page Style */
+
+html {
+	font-size: 14px;
+}
+
+body {
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+	background-color: #ecfdf5;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	appearance: none;
+}
+
+/* Meeting Attendance */
+
+#meetingAttendance {
+	width: 900px;
+	padding: 1rem;
+	background-color: #fff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	border-radius: 5px;
+}
+
+#meetingAttendance > h2 {
+	text-align: center;
+	font-size: 1.4rem;
+	color: #022c22;
+}
+
+#meetingAttendance .wrapper {
+	display: grid;
+	align-items: start;
+	grid-template-columns: 35% 5% auto;
+}
+
+/* QR Wrapper */
+
+#meetingAttendance .qRWrapper p {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 0;
+	color: #064e3b;
+}
+
+#meetingAttendance .qRWrapper img {
+	width: 100%;
+}
+
+/* Divider */
+
+#meetingAttendance .divider {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+}
+
+#meetingAttendance .divider div {
+	width: 1px;
+	height: 75px;
+	background-color: #064e3b;
+}
+
+#meetingAttendance .divider span {
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+/* Form wrapper */
+
+#meetingAttendance .formWrapper {
+	padding-top: 1rem;
+}
+
+#meetingAttendance .formWrapper p {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 0;
+	color: #064e3b;
+}
+
+#meetingAttendance .formWrapper form .fields-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 1rem;
+	gap: 10px;
+}
+
+#meetingAttendance .form-field.submit button[type='submit'] {
+	background-color: #065f46;
+}
+
+/* Form Field */
+
+.form-field {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-field.wide {
+	grid-column: 1 / -1;
+}
+
+.form-field.submit {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	justify-content: end;
+}
+
+.form-field label {
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: #064e3b;
+	display: none;
+}
+
+.form-field .input-box {
+	width: 100%;
+	border: 1px solid #999;
+	position: relative;
+	border-radius: 3px;
+	display: flex;
+}
+
+.form-field .input-box span.counter {
+	position: absolute;
+	inset: -20px 0 auto auto;
+	font-size: 0.9rem;
+	color: #888;
+}
+
+.form-field.valid .input-box {
+	border: 1px solid #198754;
+}
+
+.form-field.invalid .input-box {
+	border: 1px solid #dc3545;
+}
+
+.form-field input[type='text'] {
+	/* Text */
+	outline: none;
+	border: none;
+	width: 100%;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+}
+
+.form-field input[type='number'] {
+	/* Number */
+	outline: none;
+	border: none;
+	width: 100%;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+}
+
+.form-field input[type='email'] {
+	/* Email */
+	outline: none;
+	border: none;
+	width: 100%;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+}
+
+.form-field input[type='date'] {
+	/* Date */
+	outline: none;
+	border: none;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+}
+
+.form-field input[type='time'] {
+	/* Time */
+	outline: none;
+	border: none;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+}
+
+.form-field input[type='url'] {
+	/* URL */
+	outline: none;
+	border: none;
+	width: 100%;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+}
+
+.form-field input[type='file'] {
+	/* File */
+	outline: none;
+	border: none;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+}
+
+.form-field textarea {
+	/* Textarea */
+	outline: none;
+	border: none;
+	width: 100%;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+	resize: vertical;
+	min-height: 50px;
+}
+
+.form-field select {
+	/* Select */
+	outline: none;
+	border: none;
+	width: 100%;
+	background-color: transparent;
+	padding: 4px 8px;
+	font-size: 0.9rem;
+	appearance: none;
+}
+
+.form-field i {
+	position: absolute;
+	font-size: 1.1rem;
+	inset: 0 5px auto auto;
+	top: 50%;
+	transform: translateY(-50%);
+	display: none;
+	color: #ced4d4;
+}
+
+.form-field i.fa-circle-exclamation {
+	color: #dc3545;
+}
+
+.form-field.invalid i.fa-circle-exclamation {
+	display: block;
+}
+
+.form-field i.fa-check {
+	color: #198754;
+}
+
+.form-field.valid i.fa-check {
+	display: block;
+}
+
+.form-field .invalid-message {
+	font-size: 0.9rem;
+	color: #dc3545;
+	display: none;
+}
+
+.form-field.invalid .invalid-message {
+	display: block;
+}

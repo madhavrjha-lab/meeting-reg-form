@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Meeting Attendance</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+		<link rel="stylesheet" href="https://harvesthq.github.io/chosen/chosen.css" />
+		<link rel="stylesheet" href="./main.css" />
+
+		<style></style>
+	</head>
+	<body>
+		<main id="meetingAttendance">
+			<h2>8th September Meeting Attendance</h2>
+			<div class="wrapper">
+				<div class="qRWrapper">
+					<img
+						src="https://img.freepik.com/premium-vector/qr-code-sample-smartphone-scanning-qr-code-icon-flat-design-stock-vector-illustration_550395-108.jpg?w=2000"
+						alt="QR Code" />
+					<p>Scan this QR Code to Check In</p>
+				</div>
+				<div class="divider">
+					<div></div>
+					<span>OR</span>
+					<div></div>
+				</div>
+				<div class="formWrapper">
+					<p>Fill the form to Check in</p>
+					<form action="">
+						<div class="fields-wrapper">
+							<div class="form-field wide">
+								<label for="circuitInput">Select Circuit</label>
+								<div class="input-box">
+									<select name="circuit" id="circuitInput">
+										<option value="">Select Circuit</option>
+										<option value="Vhembe East">Vhembe East</option>
+										<option value="Vhembe West">Vhembe West</option>
+										<option value="Vhembe North">Vhembe North</option>
+										<option value="Vhembe South">Vhembe South</option>
+										<option value="Capricorn South">Capricorn South</option>
+										<option value="Capricorn North">Capricorn North</option>
+										<option value="Johannesburg">Johannesburg</option>
+									</select>
+									<i class="fa-solid fa-circle-exclamation"></i>
+									<i class="fa-solid fa-check"></i>
+								</div>
+								<div class="invalid-message"></div>
+							</div>
+							<div class="form-field wide">
+								<label for="schoolInput">Select School</label>
+								<div class="input-box">
+									<select name="school" id="schoolInput">
+										<option value="">Select School</option>
+										<option value="Alphendale High School">Alphendale High School</option>
+										<option value="Mveledzandivho Primary">Mveledzandivho Primary</option>
+										<option value="Hitekani Secondary">Hitekani Secondary</option>
+										<option value="Ketlani Primary">Ketlani Primary</option>
+										<option value="Kutama Secondary">Kutama Secondary</option>
+										<option value="Florapark Primary">Florapark Primary</option>
+										<option value="Banana Primary">Banana Primary</option>
+										<option value="Other">Other School</option>
+									</select>
+									<i class="fa-solid fa-circle-exclamation"></i>
+									<i class="fa-solid fa-check"></i>
+								</div>
+								<div class="invalid-message"></div>
+							</div>
+							<div class="form-field wide">
+								<label for="otherSchoolNameInput">Enter School Name</label>
+								<div class="input-box">
+									<input type="text" name="otherSchoolName" id="otherSchoolNameInput" placeholder="Enter School Name" />
+									<i class="fa-solid fa-circle-exclamation"></i>
+									<i class="fa-solid fa-check"></i>
+								</div>
+								<div class="invalid-message"></div>
+							</div>
+							<div class="form-field wide">
+								<label for="designationInput">Choose Designation</label>
+								<div class="input-box">
+									<select name="designation" id="designationInput">
+										<option value="">Select Designation</option>
+										<option value="Circuit Manager">Circuit Manager</option>
+										<option value="Circuit Officials">Circuit Officials</option>
+										<option value="Curriculumn Manager">Curriculumn Manager</option>
+										<option value="Principal">Principal</option>
+										<option value="Deputy Principal">Deputy Principal</option>
+										<option value="SMT">SMT</option>
+										<option value="IT Coordinator">IT Coordinator</option>
+										<option value="Educator">Educator</option>
+										<option value="Other Staff">Other Staff</option>
+									</select>
+									<i class="fa-solid fa-circle-exclamation"></i>
+									<i class="fa-solid fa-check"></i>
+								</div>
+								<div class="invalid-message"></div>
+							</div>
+							<div class="form-field">
+								<label for="initialsInput">Your Initials</label>
+								<div class="input-box">
+									<input type="text" name="initials" id="initialsInput" placeholder="Your Initials - example J.D." />
+									<i class="fa-solid fa-circle-exclamation"></i>
+									<i class="fa-solid fa-check"></i>
+								</div>
+								<div class="invalid-message"></div>
+							</div>
+							<div class="form-field">
+								<label for="lastNameInput">Your Last Name</label>
+								<div class="input-box">
+									<input type="text" name="lastName" id="lastNameInput" placeholder="Your Last Name" />
+									<i class="fa-solid fa-circle-exclamation"></i>
+									<i class="fa-solid fa-check"></i>
+								</div>
+								<div class="invalid-message"></div>
+							</div>
+							<div class="form-field">
+								<label for="emailInput">Your Email</label>
+								<div class="input-box">
+									<input type="email" name="email" id="emailInput" placeholder="Your Email" />
+									<i class="fa-solid fa-circle-exclamation"></i>
+									<i class="fa-solid fa-check"></i>
+								</div>
+								<div class="invalid-message"></div>
+							</div>
+							<div class="form-field">
+								<label for="phoneInput">Your Phone</label>
+								<div class="input-box">
+									<input type="number" name="phone" id="phoneInput" placeholder="Your Phone" />
+									<i class="fa-solid fa-circle-exclamation"></i>
+									<i class="fa-solid fa-check"></i>
+								</div>
+								<div class="invalid-message"></div>
+							</div>
+							<div class="form-field submit wide">
+								<button class="btn btn-success" type="submit">Check-In</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
